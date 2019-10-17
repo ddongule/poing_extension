@@ -16,6 +16,9 @@ body {
     height: 200px;
     width: auto;
 }
+
+
+
 .container {
     height: 100%;
     background-color: white;
@@ -26,3 +29,66 @@ body {
     width: 100%;
     border-top: .5px solid #e2e2e2;
 }
+
+
+
+.url-plus-btn {
+    text-align: center;
+}
+ .menu-button {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    line-height: 60px;
+    border-radius: 30%;
+    background-color: #00e6b9;
+    color: #fff;
+    font-size: 3em;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition-duration: .2s;
+
+}
+.menu-button:hover {
+    transition-duration: .4s;
+    background: #00c19c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu-button a {
+    text-decoration: none;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 24px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.menu-button a:hover {
+    transition-duration: .4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu-button a:nth-child(1),
+.menu-button a:nth-child(2) {
+    transition-duration: .4s;
+    transition: opacity .4s;
+    display: block;
+    background: #00c19c;
+}
+
+.menu-button:hover a {
+    opacity: 1;
+    width: 200px;
+    height: 55px;
+}
+
+.menu-button:hover a:nth-child(1):hover,
+.menu-button:hover a:nth-child(2):hover {
+    background: rgb(255, 211, 100);
+}
+
