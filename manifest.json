@@ -13,7 +13,7 @@
             "16" : "icon/icon_16.png"
         },
         "default_title" : "어포잉탭",
-        "use_navigation_bar" : true,
+        "use_navigation_bar" : false,
         "mobile_user_agent" : true
     }, 
 
