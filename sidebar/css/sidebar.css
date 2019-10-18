@@ -31,11 +31,26 @@ body {
 }
 
 
-
 .url-plus-btn {
     text-align: center;
 }
- .menu-button {
+
+.url-plus-btn .menu-button .show-btn {
+    display: none;
+}
+
+.url-plus-btn .menu-button input[type=checkbox]{
+    display: none;
+}
+
+
+.url-plus-btn .menu-button input[type=checkbox]:checked + .show-btn{
+    display: flex;
+    justify-content: center;
+    transition-duration: .3s;
+}
+
+.url-plus-btn .menu-button label{
     display: inline-block;
     width: 55px;
     height: 55px;
@@ -44,51 +59,34 @@ body {
     background-color: #00e6b9;
     color: #fff;
     font-size: 3em;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
-    cursor: pointer;
-    transition-duration: .2s;
-
-}
-.menu-button:hover {
-    transition-duration: .4s;
-    background: #00c19c;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.menu-button a {
-    text-decoration: none;
-    opacity: 0;
-    width: 0px;
-    height: 0px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 15px;
-    color: #fff;
-    font-size: 24px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.15rem 0.4rem rgba(0,0,0,.2);
     cursor: pointer;
 }
-.menu-button a:hover {
-    transition-duration: .4s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+.url-plus-btn .menu-button label:hover{
+    background-color: #00c19c;
+    color: rgba(255, 255, 255, 0.674);
+    transition-duration: .3s;
 }
 
-.menu-button a:nth-child(1),
-.menu-button a:nth-child(2) {
-    transition-duration: .4s;
-    transition: opacity .4s;
+.url-plus-btn .menu-button .show-btn a {
     display: block;
-    background: #00c19c;
-}
-
-.menu-button:hover a {
-    opacity: 1;
+    margin: 1em;
+    text-decoration: none;
     width: 200px;
     height: 55px;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    border-radius: 50px;
+    box-shadow: 0 0.15rem 0.4rem rgba(0,0,0,.2);
+    cursor: pointer;
+    background: #00c19c;
 }
 
-.menu-button:hover a:nth-child(1):hover,
-.menu-button:hover a:nth-child(2):hover {
+.url-plus-btn .menu-button .show-btn a:hover {
+    transition-duration: .3s;
     background: rgb(255, 211, 100);
 }
 
