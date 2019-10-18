@@ -17,8 +17,6 @@ body {
     width: auto;
 }
 
-
-
 .container {
     height: 100%;
     background-color: white;
@@ -28,7 +26,90 @@ body {
     height: 100px;
     width: 100%;
     border-top: .5px solid #e2e2e2;
+    display: flex;
 }
+
+/* 사이트 로고 부분 */
+.url-box .site-logo {
+    width: 20%;
+    padding: 1em;
+}
+.url-box .site-logo .logobox {
+    /* border: .5px solid #e2e2e2;
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    padding: 25%; */
+    border: .5px solid #e2e2e2;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.url-box .site-logo .logobox img {
+    width: 100%;
+}
+
+/* 사이트 설명 부분 */
+.url-box .site-description {
+    width: 60%;
+    padding: 1em;
+}
+
+.url-box .site-description .sitename{
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin: 5px 0;
+}
+
+.url-box .site-description .sitedes{
+    color: black;
+    display: block;
+    margin: 3px 0;
+}
+
+/* 사이트 예약 온오프 부분 */
+
+.url-box .site-onoff {
+    width: 20%;
+    padding: 1em;
+    display: flex;
+}
+
+.url-box .site-onoff {
+    width: 20%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.url-box .site-onoff .edit {
+    height: 2.2em;
+    width: 2.2em;
+    background-image: url("img/edit.svg");
+    background-repeat: no-repeat;
+    background-position: 43%;
+    background-size: 80%;
+    border: none;
+    margin: 0 4px;
+}
+
+.url-box .site-onoff .cancel {
+    background-image: url("img/cancel.svg");
+    height: 2.2em;
+    width: 2.2em;
+    background-repeat: no-repeat;
+    background-position: 43%;
+    background-size: 70%;
+    border: none;
+    margin: 0 4px;
+}
+
+
+
+
 
 
 .url-plus-btn {
@@ -43,7 +124,6 @@ body {
     display: none;
 }
 
-
 .url-plus-btn .menu-button input[type=checkbox]:checked + .show-btn{
     display: flex;
     justify-content: center;
@@ -55,21 +135,29 @@ body {
     width: 55px;
     height: 55px;
     line-height: 60px;
-    border-radius: 30%;
+    border-radius: 50%;
     background-color: #00e6b9;
     color: #fff;
     font-size: 3em;
     box-shadow: 0 0.15rem 0.4rem rgba(0,0,0,.2);
     cursor: pointer;
-}
-
-.url-plus-btn .menu-button label:hover{
-    background-color: #00c19c;
-    color: rgba(255, 255, 255, 0.674);
+    z-index: 99;
     transition-duration: .3s;
 }
 
+/* .url-plus-btn .menu-button label */
+/* .url-plus-btn .menu-button label:hover, */
+.url-plus-btn .menu-button label:hover{
+    background-color: #00c19c;
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.2);
+    color: rgba(255, 255, 255, 0.674);
+    transition-duration: .3s;
+    transform: rotate(45deg);
+}
+
+
 .url-plus-btn .menu-button .show-btn a {
+    transition-duration: 1s;
     display: block;
     margin: 1em;
     text-decoration: none;
@@ -77,7 +165,7 @@ body {
     height: 55px;
     color: #fff;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.7em;
     line-height: 50px;
     border-radius: 50px;
     box-shadow: 0 0.15rem 0.4rem rgba(0,0,0,.2);
@@ -89,4 +177,42 @@ body {
     transition-duration: .3s;
     background: rgb(255, 211, 100);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
